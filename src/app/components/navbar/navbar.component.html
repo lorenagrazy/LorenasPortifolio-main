@@ -1,0 +1,18 @@
+<nav>
+  <div class="logo">
+    <img src="./../../../assets/perfil2.png" alt="Logo Imagem" class="logo-image">
+    Lorena Silva
+  </div>
+  <ul [ngClass]="{'active': isMenuOpen}" (click)="toggleMenu()" class="menu">
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/skills">Skills</a></li>
+    <li><a routerLink="/education">Education</a></li>
+    <li><a routerLink="/work">Work</a></li>
+    <li><a routerLink="/experience">Experience</a></li>
+    <li><a routerLink="/contact">Contact</a></li>
+  </ul>
+  <button (click)="toggleMenu()" class="menu-button">
+    <i [ngClass]="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
+  </button>
+</nav>
