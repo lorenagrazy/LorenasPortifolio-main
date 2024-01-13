@@ -6,6 +6,10 @@ nav {
   background-color: #ecf8f8;
   padding: 1.7rem 10%;
   box-shadow: 0 4px 4px -3px rgba(146, 161, 176, 0.3); /* Ajuste o box-shadow aqui */
+  z-index: 3; /* Ajuste conforme necessário para garantir que fique acima do conteúdo */
+}
+.navbar-toggle {
+  z-index: 3; /* Ajuste conforme necessário para garantir que fique acima do conteúdo */
 }
 
 nav .logo {
@@ -92,13 +96,14 @@ nav ul.menu a:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 66px;
+    top: 64px;
     right: 0;
     background-color: #ecf8f8; /* Restaure o background-color original se necessário */
     padding: 0px;
     right: 0;
     transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out,
       right 0.5s ease-in-out;
+      z-index: 3;
   }
 
   nav ul.menu li {

@@ -1,5 +1,5 @@
 {
-  "name": "lorenas-portifolio",
+  "name": "lorenas-portifolio-main",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -26,12 +26,15 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
+    "particles.js": "^2.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typed.js": "^2.1.0",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.1",
+    "@angular/cli": "~16.2.1",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
     "@types/jquery": "^3.5.25",
