@@ -1,20 +1,45 @@
 <section class="home" id="home">
   <div id="particles-js"></div>
-
   <div class="content">
-  <h2>Hi There,<br/> I'm Lorena <span>Silva</span></h2>
-  <p>i am into <span class="typing-text"></span></p>
-  <a href="#about" class="btn"><span>About Me</span>
-    <i class="fas fa-arrow-circle-down"></i>
-  </a>
-  <div class="socials">
+    <h2>
+      Hello everyone,<br />
+      I'm Lorena <span>Silva</span>
+    </h2>
+    <p>I like <span class="typing-text"></span></p>
+    <a [routerLink]="['/about']" href="#about" class="btn"
+      ><span>About Me</span>
+    </a>
+    <div class="socials">
       <ul class="social-icons">
-        <li><a class="linkedin" aria-label="LinkedIn" href="" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-        <li><a class="github" aria-label="GitHub" href="" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li>
+          <a
+            class="linkedin"
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/lorena-silva-020721121/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="github"
+            aria-label="GitHub"
+            href="https://github.com/lorenagrazy"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
       </ul>
     </div>
   </div>
-<div class="image">
-  <img draggable="false" class="tilt" src="./../../../assets/Lorena.svg" alt="">
-</div>
+  <div class="image">
+    <a [routerLink]="['/about']">
+      <img
+        draggable="false"
+        class="tilt"
+        src="./../../../assets/Lorena.svg"
+        alt=""
+      />
+    </a>
+  </div>
 </section>

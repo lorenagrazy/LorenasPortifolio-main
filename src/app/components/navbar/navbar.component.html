@@ -1,9 +1,13 @@
 <nav>
   <div class="logo">
-    <img src="./../../../assets/perfil2.png" alt="Logo Imagem" class="logo-image">
+    <img
+      src="./../../../assets/perfil2.png"
+      alt="Logo Imagem"
+      class="logo-image"
+    />
     Lorena Silva
   </div>
-  <ul [ngClass]="{'active': isMenuOpen}" (click)="toggleMenu()" class="menu">
+  <ul [ngClass]="{ active: isMenuOpen }" (click)="toggleMenu()" class="menu">
     <li><a routerLink="/home">Home</a></li>
     <li><a routerLink="/about">About</a></li>
     <li><a routerLink="/skills">Skills</a></li>
