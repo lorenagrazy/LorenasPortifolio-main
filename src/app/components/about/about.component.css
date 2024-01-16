@@ -1,0 +1,140 @@
+.content {
+  margin-top: 1%;
+}
+
+
+.about .row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+
+ 
+}
+
+.about .row .title {
+  margin-top: 2%;
+  text-align: center;
+  flex: 0 1 33rem;
+  color: #03045e;
+  font-size: 2.5rem;
+  font-style: normal;
+  margin-left: 0%;
+  padding-left: 0%;
+
+}
+
+.about .row .title img {
+  width: auto;
+  height: 30rem;
+  transition: 0.3s;
+  cursor: pointer; /* Alterado para pointer para indicar que é clicável */
+  background: #ecf8f8;
+  border-radius: 5%;
+  margin-top: 5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  mix-blend-mode: luminosity;
+}
+
+.about .row .title img:hover {
+  filter: brightness(80%) sepia(100%); /* Aplica uma sobreposição de cor siena */
+}
+
+
+.about .row .title img:hover {
+  mix-blend-mode: normal;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  
+}
+
+.about .row .content {
+  flex: 1 1 30rem;
+  padding: 2rem;
+  padding-left: 0rem; /* Ajuste a margem esquerda do padding conforme necessário */
+  margin-left: 0rem; /* Ajuste a margem esquerda do margin conforme necessário */
+}
+
+.about .row .content p {
+  font-size: 2rem;
+  font-style: normal;
+  text-align: justify;
+  margin-top: 8rem; /* Ajuste conforme necessário */
+  font-family: "Nunito";
+  font-weight: 400;
+  text-transform: none;
+  margin-right: 3rem; /* Ajuste a margem direita conforme necessário */
+
+}
+
+
+
+
+.resumebtn {
+  margin-top: 6rem;
+  text-align: right; /* Adiciona esta linha para alinhar à direita */
+}
+
+.resumebtn .btn {
+  padding: 1.3rem 2rem;
+  border-radius: 4em;
+  transition: 0.3s;
+  color: #fff;
+  background: #212529;
+  box-shadow: 0px 5px 10px #212529;
+  font-family: "Nunito", sans-serif;
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+.resumebtn .btn span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.resumebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.resumebtn .btn:hover {
+  background: #6c757d;
+}
+
+
+.span {
+  color: #780000;
+}
+
+/* about media queries starts*/
+@media screen and (max-width: 600px) {
+  .about .row {
+    flex-direction: column; /* Empilhe os elementos em telas menores */
+    align-items: center; /* Centralize os elementos no eixo transversal */
+    padding: 1rem;
+  }
+
+  .about .row .title img {
+    width: 25%; /* Faça com que a largura da imagem seja 100% da largura do contêiner pai */
+    height: auto; /* Mantenha a proporção original da imagem */
+    margin-top: 1rem;
+    
+  }
+
+  .about .row .title h3 {
+    font-size: 1.8rem; /* Ajuste conforme necessário */
+  }
+
+  .about .row .content p {
+    margin-top: 1.5rem; /* Ajuste conforme necessário */
+    text-align: justify; /* Centralize o texto */
+    margin-left: 4rem;
+  }
+
+  .resumebtn .btn{
+    margin-left: 4rem;
+  }
+}
