@@ -146,11 +146,11 @@
 @media (max-width: 450px) {
   .home .btn {
     margin: 4rem 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .socials {
-    margin-top: 3rem;
-    margin-left: 1rem;
+    margin-top: 3.5rem;
+    margin-left: 2rem;
   }
   .home .image img {
     width: 50%; /* Ajuste para telas menores */
@@ -163,13 +163,13 @@
     font-size: 2.2rem;
   }
   .home .content h2 {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .home .content p {
     font-size: 2.5rem;
     color: #212529;
     font-weight: 600;
     padding: 1rem 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 }
