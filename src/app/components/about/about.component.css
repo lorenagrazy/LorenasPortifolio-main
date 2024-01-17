@@ -18,7 +18,7 @@
   text-align: center;
   flex: 0 1 33rem;
   color: #03045e;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   font-style: normal;
   margin-left: 0%;
   padding-left: 0%;
@@ -120,7 +120,6 @@
   .about .row .title img {
     width: 25%; /* Faça com que a largura da imagem seja 100% da largura do contêiner pai */
     height: auto; /* Mantenha a proporção original da imagem */
-    margin-top: 1rem;
     
   }
 
@@ -129,7 +128,7 @@
   }
 
   .about .row .content p {
-    margin-top: 0.3rem; /* Ajuste conforme necessário */
+    margin-top: 0rem; /* Ajuste conforme necessário */
     text-align: justify; /* Centralize o texto */
     margin-left: 4rem;
   }
