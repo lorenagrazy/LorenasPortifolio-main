@@ -188,7 +188,7 @@ form .button-area {
 @media (max-width: 450px) {
 
   .contact .container .content {
-    padding: 0rem 4rem 1rem 3rem;
+    padding: 1rem 4rem 3rem 3rem;
   }
 
   .contact .content .image-box {
@@ -219,7 +219,7 @@ form .button-area {
   }
 
   .contact .container {
-    max-width: 38rem;
+    max-width: 34rem;
     width: 100%; 
   }
 }
