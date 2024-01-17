@@ -151,12 +151,12 @@
 
   .socials {
     position: relative;
-    margin-top: 9rem;
+    margin-top: 12rem;
     margin-left: 2rem;
   }
   .home .image img {
     width: 65%; /* Ajuste para telas menores */
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
   }
   .home .content p {
     font-size: 2.2rem;
