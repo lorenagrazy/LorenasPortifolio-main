@@ -1,12 +1,11 @@
 .home {
   position: relative;
   display: flex;
-  flex-direction: column; /* Adicione esta linha */
+  flex-wrap: wrap;
   gap: 1.5rem;
-  min-height: 100%;
+  min-height: 89vh;
   align-items: center;
 }
-
 .home #particles-js {
   position: absolute;
   top: 0;
@@ -147,14 +146,15 @@
 @media (max-width: 450px) {
   .home .btn {
     margin: 4rem 0;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .socials {
-    margin-top: 12rem;
-    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
   }
   .home .image img {
-    margin-top: -12rem;
+    width: 50%; /* Ajuste para telas menores */
+    margin-top: 20rem;
   }
   .home .content p {
     font-size: 2.2rem;
@@ -163,12 +163,13 @@
     font-size: 2.2rem;
   }
   .home .content h2 {
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .home .content p {
-    margin-left: 3rem;
-  }
-  .home::before{
-    width: 100%;
+    font-size: 2.5rem;
+    color: #212529;
+    font-weight: 600;
+    padding: 1rem 0;
+    margin-left: 1rem;
   }
 }
