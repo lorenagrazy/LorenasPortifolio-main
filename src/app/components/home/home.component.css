@@ -147,15 +147,15 @@
   .home .btn {
     margin: 4rem 0;
     margin-left: 2rem;
-
   }
+
   .socials {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 9rem;
     margin-left: 2rem;
   }
   .home .image img {
-    width: 50%; /* Ajuste para telas menores */
+    width: 65%; /* Ajuste para telas menores */
     margin-top: 4.5rem;
   }
   .home .content p {
