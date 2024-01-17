@@ -144,6 +144,10 @@
 }
 
 @media (max-width: 450px) {
+  .home {
+    margin-top: 5rem;
+  }
+  
   .home .btn {
     margin: 4rem 0;
     margin-left: 2rem;
@@ -156,7 +160,7 @@
   }
   .home .image img {
     width: 65%; 
-    margin-top: 2.0rem;
+    margin-top: 1rem;
   }
   .home .content p {
     font-size: 2.2rem;
@@ -179,4 +183,5 @@
   .home .content h2 span {
     font-size: 3.5rem;
   }
+
 }
