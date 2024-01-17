@@ -167,4 +167,7 @@
   .home .content p {
     margin-left: 3rem;
   }
+  .home::before{
+    width: 100%;
+  }
 }
