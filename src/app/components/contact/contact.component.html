@@ -14,19 +14,19 @@
       </div>
       <form netlifly [formGroup]="contactForm" name="contactForm" (ngSubmit)="onSubmit()">      <div class="form-group">
         <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" formControlName="name" name="name" placeholder="Name" required>
           <i class='fas fa-user'></i>
         </div>
         <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
+          <input type="text" formControlName="email" name="email" placeholder="Email" required>
           <i class='fas fa-envelope'></i>
         </div>
         <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
+          <input type="text" formControlName="phone" name="phone" placeholder="Phone">
           <i class='fas fa-phone-alt'></i>
         </div>
         <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
+        <textarea formControlName="message" placeholder="Message" name="message" required></textarea>
         <i class="fas fa-comment-dots"></i>
         </div>
         </div>
