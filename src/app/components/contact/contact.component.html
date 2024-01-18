@@ -12,28 +12,30 @@
       <div class="image-box">
         <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
       </div>
-      <form netlify [formGroup]="contactForm" name="contactForm" (ngSubmit)="onSubmit()">      <div class="form-group">
-        <div class="field">
-          <input type="text" formControlName="name" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
+      <form data-netlify="true" netlify [formGroup]="contactForm" name="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <div class="field">
+            <input type="text" formControlName="name" name="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" formControlName="email" name="email" placeholder="Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="text" formControlName="phone" name="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+            <textarea formControlName="message" placeholder="Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
         </div>
-        <div class="field">
-          <input type="text" formControlName="email" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
+        <div class="button-area">
+          <button type="submit" [disabled]="contactForm.invalid">Submit Feedback</button>
         </div>
-        <div class="field">
-          <input type="text" formControlName="phone" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea formControlName="message" placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit" [disabled]="contactForm.invalid">Submit Feedback</button>
-      </div>
-    </form>
+      </form>
+      
   </div>
   </div>
 </section>
