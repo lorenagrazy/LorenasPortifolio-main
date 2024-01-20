@@ -12,12 +12,16 @@
   
 </head>
 <body>
-  <form name="contactForm" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name"/>
-    <input type="text" name="email"/>
-    <input type="text" name="phone"/>
-    <input type="text" name="message"/>
-  </form>
+  <body>
+    <app-root></app-root>
+    <!-- Hidden form used for Netlify Forms to pick it up -->
+    <form name="contact" method="POST" netlify hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" id="name" name="name" />
+      <input type="hidden" id="email" name="email" />
+      <textarea type="hidden" id="body" name="body"></textarea>
+    </form>
+  </body>
   <app-root></app-root>
 </body>
 </html>
