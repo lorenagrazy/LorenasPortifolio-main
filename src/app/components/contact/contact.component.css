@@ -5,7 +5,7 @@
   margin-bottom: 2rem;
 }
 
-.heading i {
+.heading img {
   margin-right: 0.5rem;
   color: #6c757d;
 }
@@ -184,9 +184,7 @@ form .button-area {
   left: 0.5rem;
 }
 
-
 @media (max-width: 450px) {
-
   .contact .container .content {
     padding: 1rem 4rem 3rem 3rem;
   }
@@ -220,8 +218,6 @@ form .button-area {
 
   .contact .container {
     max-width: 34rem;
-    width: 100%; 
+    width: 100%;
   }
 }
-
-  
