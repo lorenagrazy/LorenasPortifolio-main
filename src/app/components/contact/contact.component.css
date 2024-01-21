@@ -197,6 +197,34 @@ form .button-area {
   left: 0.5rem;
 }
 
+/* ... (seu código CSS existente) ... */
+
+.contact .content {
+  position: relative; /* Adiciona posição relativa para que a mensagem de sucesso seja posicionada de acordo com isso */
+}
+
+.contact .success-message {
+  position: absolute;
+  top: 100%; /* Posiciona a mensagem abaixo do conteúdo existente */
+  left: 50%; /* Centraliza na horizontal */
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0; /* Espaçamento de 3rem */
+  box-sizing: border-box;
+  color: rgb(2, 25, 63);
+}
+
+.contact .success-content {
+  background: #ecf8f8;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+}
+
+/* ... (seu código CSS existente) ... */
+
+
 /* Media Query for Small Screens */
 @media (max-width: 450px) {
   .contact .container {
@@ -234,5 +262,33 @@ form .button-area {
     top: 1rem;
     left: 0.5rem;
   }
+
+  /* ... (seu código CSS existente) ... */
+
+.contact .content {
+  position: relative; /* Adiciona posição relativa para que a mensagem de sucesso seja posicionada de acordo com isso */
+}
+
+.contact .success-message {
+  position: absolute;
+  top: 100%; /* Posiciona a mensagem abaixo do conteúdo existente */
+  left: 50%; /* Centraliza na horizontal */
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0; /* Espaçamento de 3rem */
+  box-sizing: border-box;
+}
+
+.contact .success-content {
+  background: #ecf8f8;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  color: rgb(2, 25, 63) ;
+}
+
+/* ... (seu código CSS existente) ... */
+
 
 }
