@@ -43,6 +43,14 @@ export class ContactComponent implements OnInit {
         this.showSuccessImage = true;
       });
   }
+  
+  get isEmailInvalid() {
+    const emailControl = this.contactForm.get('email');
+    return emailControl?.value && emailControl?.invalid && (emailControl.dirty || emailControl.touched);
+  }
+  
+  
+  
 
   get name() {
     return this.contactForm.get('name');

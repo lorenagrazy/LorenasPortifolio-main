@@ -28,7 +28,7 @@
   background: #ecf8f8;
   border-radius: 2.5rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
-    max-width: 83%;
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -205,9 +205,9 @@ form .button-area {
 
 .contact .success-message {
   position: absolute;
-  top: 50%; /* Centraliza verticalmente em relação à tela */
+  top: 100%; /* Posiciona a mensagem abaixo do conteúdo */
   left: 50%; /* Centraliza na horizontal */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   width: 100%;
   text-align: center;
   padding: 2rem 0; /* Reduzi o espaçamento para 2rem */
