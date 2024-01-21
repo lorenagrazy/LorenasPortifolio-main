@@ -26,22 +26,24 @@ export class ContactComponent implements OnInit {
 
   onSubmit(evt: SubmitEvent) {
     evt.preventDefault();
-
+  
     const formData = this.contactForm.value;
     formData['form-name'] = 'contact';
     const headers = new HttpHeaders({
       Accept: 'text/html',
       'Content-Type': 'application/x-www-form-urlencoded',
     });
-
+  
     this.http
       .post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
       .subscribe(() => {
         this.isContactFormSubmitted = true;
         this.successMessage = "Thank you for reaching out! Your message has been successfully sent. I'll get back to you as soon as I can.";
+  
+        // Reset other form fields or perform any other necessary actions
       });
   }
-
+  
   get name() {
     return this.contactForm.get('name');
   }
