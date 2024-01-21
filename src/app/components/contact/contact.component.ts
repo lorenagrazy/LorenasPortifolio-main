@@ -39,7 +39,7 @@ export class ContactComponent implements OnInit {
       .post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
       .subscribe(() => {
         this.isContactFormSubmitted = true;
-        this.successMessage = "Thank you for reaching out! Your message has been successfully sent. I'll get back to you as soon as I can.";
+        this.successMessage = "Thank you for reaching out!<br> Your message has been successfully sent. <br> I'll get back to you <br> as soon as I can.";
         this.showSuccessImage = true;
       });
   }

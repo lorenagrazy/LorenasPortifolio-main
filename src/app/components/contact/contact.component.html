@@ -9,6 +9,15 @@
       <div class="image-box">
         <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
       </div>
+             <!-- Imagem e mensagem de sucesso sempre presentes -->
+<div class="success-message fade-in">
+  <div class="success-image" *ngIf="showSuccessImage">
+    <img src="../../../assets/success.svg" alt="Descrição da imagem">
+  </div>
+  <div class="success-text">
+    {{ successMessage }}
+  </div>
+    </div>
       <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)" netlify>
         <input type="hidden" name="form-name" value="contact" />
 
@@ -63,15 +72,7 @@
           </button>
         </div>
       </form>
-        <!-- Imagem e mensagem de sucesso sempre presentes -->
-<div class="success-message fade-in">
-  <div class="success-image" *ngIf="showSuccessImage">
-    <img src="../../../assets/success.svg" alt="Descrição da imagem">
-  </div>
-  <div class="success-text">
-    {{ successMessage }}
-  </div>
-    </div>
+ 
 
  
 </div>

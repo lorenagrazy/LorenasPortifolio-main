@@ -266,12 +266,14 @@ form .button-area {
   }
 
   .contact .success-message {
-    padding: 2rem 0; /* Reduzi o espaçamento para 2rem */
+    padding: 2rem 0;
+    color: rgb(2, 25, 63);
+    font-size: 1.5rem; /* Reduzi o espaçamento para 2rem */
   }
 
   .success-image img {
-    max-width: 5rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
-    max-height: 3rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
+    max-width: 12rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
+    max-height: 12rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
     display: block;
     margin: 0 auto;
   }
