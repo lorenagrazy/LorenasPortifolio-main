@@ -202,18 +202,24 @@ small {
 .success-message {
   color: rgb(2, 25, 63);
   padding: 2rem;
-  border-radius: 5px;
-  margin-top: 4rem;
+  margin-top: 6rem;
   text-align: justify;
   font-size: 1.5rem;
-  position: absolute;
   bottom: 0; /* Alinha a mensagem de sucesso à parte inferior */
   left: 0;
   right: 0;
-  background: #ecf8f8; /* Mantém o mesmo estilo de background */
-  z-index: 1; /* Coloca a mensagem sobreposta à imagem */
-}
+  z-index: 0; /* Coloca a mensagem sobreposta à imagem */
 
+  max-width: 70rem;
+  width: 100%;
+  background: #ecf8f8;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  overflow: hidden; 
+}
 .success-message.fade-in {
   animation: fadeIn 1s ease-in-out;
 }
@@ -309,14 +315,13 @@ small {
     max-width: 100%;
     max-height: 5rem; /* Ajuste conforme necessário */
     height: auto;
-   position: fixed;
    margin-bottom: 3rem;
   }
 
   /* Adiciona estilos para centralizar a mensagem de sucesso na parte inferior */
   .success-message .success-content {
     position: absolute;
-    bottom: 1rem; /* Ajuste conforme necessário */
+    bottom: 3rem; /* Ajuste conforme necessário */
     left: 50%;
     transform: translateX(-50%);
   }
