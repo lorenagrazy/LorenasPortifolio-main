@@ -279,43 +279,48 @@ small {
     width: 100%;
   }
 
+
   .success-message {
     color: rgb(2, 25, 63);
     padding: 2rem;
     border-radius: 5px;
-    margin-top: 2.5rem;
     text-align: center;
     font-size: 1.5rem;
     position: absolute;
-    bottom: 0; /* Alinha a mensagem de sucesso à parte inferior */
+    top: 0; /* Alinha a mensagem de sucesso ao topo */
     left: 0;
     right: 0;
-    z-index: 1; /* Coloca a mensagem sobreposta à imagem */
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.75rem 3rem;
+    background-color: #ecf8f8; /* Coloca a mensagem sobreposta à imagem */
   }
-
+  
   .success-message.fade-in {
     animation: fadeIn 1s ease-in-out;
   }
-
+  
   .success-message .image-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem; /* Ajuste conforme necessário */
   }
-
+  
   .success-message .image-box img {
     max-width: 100%;
     max-height: 5rem; /* Ajuste conforme necessário */
     height: auto;
     margin-bottom: 3rem;
   }
-
+  
   .success-message .success-content {
     position: absolute;
-    bottom: 3rem; /* Ajuste conforme necessário */
+    top: 5rem; /* Ajuste conforme necessário */
     left: 50%;
     transform: translateX(-50%);
   }
-}
-
+  
