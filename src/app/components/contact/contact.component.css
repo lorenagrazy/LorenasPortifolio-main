@@ -197,8 +197,6 @@ small {
   color: rgb(2, 25, 63);
 }
 
-/* Adicione essas classes ao seu arquivo CSS */
-
 .success-message {
   color: rgb(2, 25, 63);
   padding: 2rem;
@@ -224,7 +222,6 @@ small {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Adiciona estilos para centralizar a imagem acima da mensagem de sucesso */
 .success-message .image-box {
   display: flex;
   justify-content: center;
@@ -238,7 +235,6 @@ small {
   height: auto;
 }
 
-/* Adiciona estilos para centralizar a mensagem de sucesso na parte inferior */
 .success-message .success-content {
   position: absolute;
   bottom: 1rem; /* Ajuste conforme necessário */
@@ -283,8 +279,6 @@ small {
     width: 100%;
   }
 
-  /* Adicione essas classes ao seu arquivo CSS */
-
   .success-message {
     color: rgb(2, 25, 63);
     padding: 2rem;
@@ -303,7 +297,6 @@ small {
     animation: fadeIn 1s ease-in-out;
   }
 
-  /* Adiciona estilos para centralizar a imagem acima da mensagem de sucesso */
   .success-message .image-box {
     display: flex;
     justify-content: center;
@@ -318,7 +311,6 @@ small {
     margin-bottom: 3rem;
   }
 
-  /* Adiciona estilos para centralizar a mensagem de sucesso na parte inferior */
   .success-message .success-content {
     position: absolute;
     bottom: 3rem; /* Ajuste conforme necessário */
@@ -327,12 +319,3 @@ small {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
