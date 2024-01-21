@@ -1,24 +1,28 @@
 <section class="contact" id="contact">
   <h2 class="heading">
-    <img class="icon" src="../../../assets//IconContactMe.png" alt="Descrição da imagem">
+    <img class="icon" src="../../../assets//IconContactMe.png" alt="Image description">
     <span>Contact Me</span>
   </h2>
 
   <div class="container">
     <div class="content">
 
-      <!-- Imagem e mensagem de sucesso sempre presentes -->
-      <div class="success-message fade-in">
+      <div class="success-message fade-in" *ngIf="isContactFormSubmitted && !isError">
         <div class="success-image" *ngIf="showSuccessImage">
-          <img src="../../../assets/success.svg" alt="Descrição da imagem">
+          <img src="../../../assets/success.svg" alt="Image description">
         </div>
         <div class="success-text">
           {{ successMessage }}
         </div>
       </div>
 
-      <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)" netlify>
-        <input type="hidden" name="form-name" value="contact" />
+      <div class="error-message fade-in" *ngIf="isError">
+        <div class="error-text">
+          {{ errorMessage }}
+        </div>
+      </div>
+
+      <form *ngIf="!isContactFormSubmitted && !isError" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)"> <input type="hidden" name="form-name" value="contact" />
 
         <div class="form-group">
           <label for="name"></label>
@@ -86,7 +90,6 @@
     </div>
   </div>
 </section>
-
 
 
 

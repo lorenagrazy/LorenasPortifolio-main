@@ -9,6 +9,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { SkillsComponent} from './components/skills/skills.component';
 import { WorkComponent } from './components/work/work.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { SuccessComponent } from './components/success/success.component';
+import { ErroComponent } from './components/erro/erro.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,8 @@ const routes: Routes = [
       { path: 'work', component: WorkComponent },
       { path: 'experience', component: ExperienceComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'success', component: SuccessComponent },
+      { path: 'error', component: ErroComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', redirectTo: '/home' },
     ],

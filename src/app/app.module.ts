@@ -16,6 +16,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SuccessComponent } from './components/success/success.component';
+import { ErroComponent } from './components/erro/erro.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienceComponent,
     NavbarComponent,
     SkillsComponent,
-    LayoutComponent
+    LayoutComponent,
+    SuccessComponent,
+    ErroComponent
   ],
   imports: [
     BrowserModule,

@@ -28,7 +28,7 @@
   background: #ecf8f8;
   border-radius: 2.5rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
-    max-width: 75%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -197,42 +197,10 @@ form .button-area {
   left: 0.5rem;
 }
 
-/* ... (seu código CSS existente) ... */
-
-.contact .content {
-  position: relative; /* Adiciona posição relativa para que a mensagem de sucesso seja posicionada de acordo com isso */
-}
-
-.contact .success-message {
-  position: absolute;
-  top: 100%; /* Posiciona a mensagem abaixo do conteúdo */
-  left: 50%; /* Centraliza na horizontal */
-  transform: translate(-50%, 0);
-  width: 100%;
-  text-align: center;
-  padding: 2rem 0; /* Reduzi o espaçamento para 2rem */
-  box-sizing: border-box;
-}
-
-.contact .success-content {
-  border-radius: 2.5rem;
-  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
-  padding: 2rem;
-  color: rgb(2, 25, 63);
-}
-.success-image img {
-  max-width: 10rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
-  max-height: 7rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
-  display: block;
-  margin: 0 auto;
-}
-
-/* ... (seu código CSS existente) ... */
-
-
+/* Media Query for Small Screens */
 @media (max-width: 450px) {
   .contact .container {
-    max-width: 100%; /* Ajuste o valor conforme desejado para uma largura menor */
+    max-width: 60%; /* Ajuste o valor conforme desejado para uma largura menor */
     margin-left: auto;
     margin-right: auto;
     padding: 1rem; /* Ajusta o padding para melhor alinhamento */
@@ -245,6 +213,8 @@ form .button-area {
   .contact .content form {
     max-width: 100%;
   }
+
+ 
 
   .button-area button {
     margin-top: 2rem;
@@ -265,18 +235,4 @@ form .button-area {
     left: 0.5rem;
   }
 
-  .contact .success-message {
-    padding: 2rem 0;
-    color: rgb(2, 25, 63);
-    font-size: 1.5rem; /* Reduzi o espaçamento para 2rem */
-  }
-
-  .success-image img {
-    max-width: 12rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
-    max-height: 12rem; /* Ajuste o valor conforme necessário para o tamanho desejado em rem */
-    display: block;
-    margin: 0 auto;
-  }
-
-  /* ... (seu código CSS existente) ... */
 }
