@@ -17,7 +17,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-style: normal;
 }
 
@@ -182,6 +182,9 @@ form .button-area {
 
 .button-area button:hover i {
   left: 0.5rem;
+}
+small{
+  color: rgb(2, 25, 63);
 }
 
 @media (max-width: 450px) {
