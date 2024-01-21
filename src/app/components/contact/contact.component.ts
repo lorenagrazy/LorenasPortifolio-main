@@ -27,14 +27,14 @@ export class ContactComponent implements OnInit {
 
   onSubmit(evt: SubmitEvent) {
     evt.preventDefault();
-
+  
     const formData = this.contactForm.value;
     formData['form-name'] = 'contact';
     const headers = new HttpHeaders({
       Accept: 'text/html',
       'Content-Type': 'application/x-www-form-urlencoded',
     });
-
+  
     this.http
       .post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
       .subscribe(() => {
