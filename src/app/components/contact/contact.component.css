@@ -40,6 +40,9 @@
 .contact .content .image-box {
   max-width: 100%;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: flex-start; /* Alinha a imagem ao topo */
 }
 
 .contact .content .image-box img {
@@ -216,7 +219,7 @@ small {
 
 .success-message .image-box img {
   max-width: 100%;
-  max-height: 150px; /* Ajuste conforme necessário */
+  max-height: 30rem; /* Ajuste conforme necessário */
   height: auto;
 }
 
