@@ -290,7 +290,6 @@ small {
     bottom: 0; /* Alinha a mensagem de sucesso à parte inferior */
     left: 0;
     right: 0;
-    background: #ecf8f8; /* Mantém o mesmo estilo de background */
     z-index: 1; /* Coloca a mensagem sobreposta à imagem */
   }
 
@@ -310,6 +309,8 @@ small {
     max-width: 100%;
     max-height: 5rem; /* Ajuste conforme necessário */
     height: auto;
+   position: fixed;
+   margin-bottom: 3rem;
   }
 
   /* Adiciona estilos para centralizar a mensagem de sucesso na parte inferior */
