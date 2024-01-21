@@ -107,11 +107,11 @@ form .message textarea {
 
 .field input:focus,
 .message textarea:focus {
-  border: 0.0625rem solid ;
+  border: 0.0625rem solid;
 }
 
-.field input:focus ~ i,
-.message textarea:focus ~ i {
+.field input:focus~i,
+.message textarea:focus~i {
   color: #fff;
 }
 
@@ -183,9 +183,11 @@ form .button-area {
 .button-area button:hover i {
   left: 0.5rem;
 }
-small{
+
+small {
   color: rgb(2, 25, 63);
 }
+
 /* Adicione essas classes ao seu arquivo CSS */
 
 /* Adicione essas classes ao seu arquivo CSS */
@@ -202,11 +204,6 @@ small{
 
 .success-message.fade-in {
   animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 /* Adiciona estilos para centralizar a imagem acima da mensagem de sucesso */
@@ -230,8 +227,6 @@ small{
   left: 50%;
   transform: translateX(-50%);
 }
-
-
 
 @media (max-width: 450px) {
   .contact .container .content {
@@ -273,47 +268,49 @@ small{
 
   /* Adicione essas classes ao seu arquivo CSS */
 
-.success-message {
-  color: rgb(2, 25, 63);
-  padding: 2rem;
-  border-radius: 5px;
-  margin-top: 2.5rem;
-  text-align: center;
-  font-size: 1.5rem;
-  position: relative; /* Adiciona posição relativa para posicionamento absoluto do conteúdo interno */
-}
+  .success-message {
+    color: rgb(2, 25, 63);
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative; /* Adiciona posição relativa para posicionamento absoluto do conteúdo interno */
+  }
 
-.success-message.fade-in {
-  animation: fadeIn 1s ease-in-out;
+  .success-message.fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  /* Adiciona estilos para centralizar a imagem acima da mensagem de sucesso */
+  .success-message .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Ajuste conforme necessário */
+  }
+
+  .success-message .image-box img {
+    max-width: 100%;
+    max-height: 150px; /* Ajuste conforme necessário */
+    height: auto;
+  }
+
+  /* Adiciona estilos para centralizar a mensagem de sucesso na parte inferior */
+  .success-message .success-content {
+    position: absolute;
+    bottom: 1rem; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+  from {
+    opacity: 0;
+  }
 
-/* Adiciona estilos para centralizar a imagem acima da mensagem de sucesso */
-.success-message .image-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem; /* Ajuste conforme necessário */
-}
-
-.success-message .image-box img {
-  max-width: 100%;
-  max-height: 150px; /* Ajuste conforme necessário */
-  height: auto;
-}
-
-/* Adiciona estilos para centralizar a mensagem de sucesso na parte inferior */
-.success-message .success-content {
-  position: absolute;
-  bottom: 1rem; /* Ajuste conforme necessário */
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-  
+  to {
+    opacity: 1;
+  }
 }

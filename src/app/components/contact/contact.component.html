@@ -7,7 +7,7 @@
   <div class="container">
     <div class="content">
       <div class="image-box">
-        <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
+        <img *ngIf="!isContactFormSubmitted" draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
       </div>
       <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)" netlify>
         <input type="hidden" name="form-name" value="contact" />
@@ -67,14 +67,12 @@
 
     <div *ngIf="isContactFormSubmitted" class="success-message fade-in">
       <div class="image-box">
-        <!-- Sua imagem existente aqui -->
         <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
       </div>
       <div class="success-content">
-        {{ successMessage }}
+        <p>{{ successMessage }}</p>
       </div>
     </div>
-
-    
   </div>
+
 </section>
