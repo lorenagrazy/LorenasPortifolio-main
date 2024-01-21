@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {  FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
@@ -11,6 +11,7 @@ export class ContactComponent implements OnInit {
   
   contactForm!: FormGroup; // Adicione o operador "!" para indicar que será inicializado no construtor
   isContactFormSubmitted = false;
+  successMessage = ''; // Mensagem de sucesso
 
   constructor(private http: HttpClient) {}
 
@@ -37,6 +38,7 @@ export class ContactComponent implements OnInit {
       .post('/', new URLSearchParams(formData).toString(), { headers, responseType: 'text' })
       .subscribe(() => {
         this.isContactFormSubmitted = true;
+        this.successMessage = "Thank you for reaching out! Your message has been successfully sent. I'll get back to you as soon as I can.";
       });
   }
 
