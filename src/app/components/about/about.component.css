@@ -64,7 +64,7 @@
   font-family: "Nunito";
   font-weight: 400;
   text-transform: none;
-  margin-right: 3rem; /* Ajuste a margem direita conforme necessário */
+  margin-right: 8rem; /* Ajuste a margem direita conforme necessário */
 
 }
 
@@ -85,7 +85,7 @@
   box-shadow: 0px 5px 10px #212529;
   font-family: "Nunito", sans-serif;
   display: inline-block;
-  margin-right: 4rem;
+  margin-right: 8rem;
 }
 
 .resumebtn .btn span {
