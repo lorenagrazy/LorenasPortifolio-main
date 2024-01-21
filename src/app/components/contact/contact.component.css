@@ -27,6 +27,11 @@
   background: #ecf8f8;
   border-radius: 2.5rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
+  margin-top: 0rem;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Adicione overflow: hidden; */
 }
 
 .contact .container .content {
@@ -194,14 +199,12 @@ small {
 
 /* Adicione essas classes ao seu arquivo CSS */
 
-/* Adicione essas classes ao seu arquivo CSS */
-
 .success-message {
   color: rgb(2, 25, 63);
   padding: 2rem;
   border-radius: 5px;
-  margin-top: 2.5rem;
-  text-align: center;
+  margin-top: 4rem;
+  text-align: justify;
   font-size: 1.5rem;
   position: absolute;
   bottom: 0; /* Alinha a mensagem de sucesso à parte inferior */
@@ -273,8 +276,6 @@ small {
     max-width: 34rem;
     width: 100%;
   }
-
-  /* Adicione essas classes ao seu arquivo CSS */
 
   /* Adicione essas classes ao seu arquivo CSS */
 
