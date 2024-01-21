@@ -186,6 +186,28 @@ form .button-area {
 small{
   color: rgb(2, 25, 63);
 }
+/* Adicione essas classes ao seu arquivo CSS */
+
+.success-message {
+  background-color: #4CAF50; /* Cor de fundo verde para indicar sucesso */
+  color: #fff; /* Cor do texto branco para contrastar com o fundo */
+  padding: 15px; /* Espaçamento interno para melhor legibilidade */
+  border-radius: 5px; /* Borda arredondada para uma aparência mais suave */
+  margin-top: 20px; /* Margem superior para afastar do formulário */
+  text-align: center; /* Centralizar o texto */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Opcional: Estilo adicional para a animação de fade-in na mensagem de sucesso */
+.success-message.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 
 @media (max-width: 450px) {
   .contact .container .content {
@@ -223,11 +245,27 @@ small{
     max-width: 34rem;
     width: 100%;
   }
-  .success-message {
-    background-color: #ecf8f8; /* Cor de fundo verde */
-    color: rgb(2, 25, 63);
-    padding: 3rem; /* Espaçamento interno */
-    margin-bottom: 5rem; /* Aumente a margem inferior conforme necessário */
-  }
+  /* Adicione essas classes ao seu arquivo CSS */
+
+.success-message {
+  background-color: #4CAF50; /* Cor de fundo verde para indicar sucesso */
+  color: #fff; /* Cor do texto branco para contrastar com o fundo */
+  padding: 15px; /* Espaçamento interno para melhor legibilidade */
+  border-radius: 5px; /* Borda arredondada para uma aparência mais suave */
+  margin-top: 20px; /* Margem superior para afastar do formulário */
+  text-align: center; /* Centralizar o texto */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Opcional: Estilo adicional para a animação de fade-in na mensagem de sucesso */
+.success-message.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
   
 }
