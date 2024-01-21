@@ -1,6 +1,6 @@
 <section class="contact" id="contact">
   <h2 class="heading">
-    <img class="" src="../../../assets//IconContactMe.png" alt="Descrição da imagem" class="icon">
+    <img class="icon" src="../../../assets//IconContactMe.png" alt="Descrição da imagem">
     <span>Contact Me</span>
   </h2>
 
@@ -9,41 +9,59 @@
       <div class="image-box">
         <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
       </div>
-      <form
-        *ngIf="!isContactFormSubmitted"
-        name="contact"
-        [formGroup]="contactForm"
-        method="POST"
-        (ngSubmit)="onSubmit($event)"
-        netlify>
-        <!-- This input field is very important to add, at least when we submit the form, making sure Netlify can receive the submission  -->
+      <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)" netlify>
         <input type="hidden" name="form-name" value="contact" />
 
-        <label for="name">Name</label>
-        <div *ngIf="name && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
-          <small *ngIf="name.errors?.['required']">Name is required</small>
+        <div class="form-group">
+          <label for="name"></label>
+          <div *ngIf="name && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+            <small *ngIf="name.errors?.['required']">Name is required</small>
+          </div>
+          <div class="field">
+            <i class="fas fa-user"></i> <!-- Ícone FontAwesome -->
+            <input id="name" type="text" formControlName="name" placeholder="Name" required />
+          </div>
         </div>
-        <input id="name" type="text" formControlName="name" required />
 
-        <label for="email">Email</label>
-        <div *ngIf="email && email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
-          <small *ngIf="email.errors?.['required']">Email is required</small>
-          <small *ngIf="email.errors?.['email']">Enter a valid email address</small>
+        <div class="form-group">
+          <label for="email"></label>
+          <div *ngIf="email && email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+            <small *ngIf="email.errors?.['required']">Email is required</small>
+            <small *ngIf="email.errors?.['email']">Enter a valid email address</small>
+          </div>
+          <div class="field">
+            <i class="fas fa-envelope"></i> <!-- Ícone FontAwesome -->
+            <input id="email" type="email" formControlName="email" placeholder="Email" required />
+          </div>
         </div>
-        <input id="email" type="email" formControlName="email" required />
 
-        <label for="phone">Phone</label>
-        <div *ngIf="phone && phone.invalid && (phone.dirty || phone.touched)" class="alert alert-danger">
-          <small *ngIf="phone.errors?.['required']">Phone is required</small>
+        <div class="form-group">
+          <label for="phone"></label>
+          <div *ngIf="phone && phone.invalid && (phone.dirty || phone.touched)" class="alert alert-danger">
+            <small *ngIf="phone.errors?.['required']">Phone is required</small>
+          </div>
+          <div class="field">
+            <i class="fas fa-phone"></i> <!-- Ícone FontAwesome -->
+            <input id="phone" type="tel" formControlName="phone" placeholder="Phone" required />
+          </div>
         </div>
-        <input id="phone" type="tel" formControlName="phone" required />
 
-        <label for="body">Message</label>
-        <div *ngIf="body && body.invalid && (body.dirty || body.touched)" class="alert alert-danger">
-          <small *ngIf="body.errors?.['required']">Message is required</small>
+        <div class="form-group">
+          <label for="body"></label>
+          <div *ngIf="body && body.invalid && (body.dirty || body.touched)" class="alert alert-danger">
+            <small *ngIf="body.errors?.['required']">Message is required</small>
+          </div>
+          <div class="message">
+            <i class="fas fa-comment-dots"></i> <!-- Ícone FontAwesome -->
+            <textarea id="body" type="text" rows="4" cols="50" formControlName="body" placeholder="Message" required></textarea>
+          </div>
         </div>
-        <textarea id="body" type="text" rows="4" cols="50" formControlName="body" required></textarea>
-        <button type="submit" [disabled]="!contactForm.valid">Send message</button>
+
+        <div class="button-area">
+          <button class="button" type="submit" [disabled]="!contactForm.valid">
+           Send
+          </button>
+        </div>
       </form>
     </div>
 
