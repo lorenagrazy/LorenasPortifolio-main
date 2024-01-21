@@ -212,7 +212,6 @@ form .button-area {
   text-align: center;
   padding: 2rem 0; /* Reduzi o espaçamento para 2rem */
   box-sizing: border-box;
-  background: none; /* Remove o fundo da mensagem */
 }
 
 .contact .success-content {
@@ -226,7 +225,6 @@ form .button-area {
 /* ... (seu código CSS existente) ... */
 
 
-/* Media Query for Small Screens */
 @media (max-width: 450px) {
   .contact .container {
     max-width: 100%; /* Ajuste o valor conforme desejado para uma largura menor */
@@ -261,18 +259,20 @@ form .button-area {
     top: 1rem;
     left: 0.5rem;
   }
+  form .message textarea{
+    padding: 0 5;
+  }
 
   .contact .success-message {
     padding: 2rem 0; /* Reduzi o espaçamento para 2rem */
   }
 
-  .image-box{
-    max-width: 50%;
-    width: 34rem;
+  .contact .content .image-box img {
+    width: 100%;
+    height: auto;
+    max-height: 20rem; /* Ajuste a altura máxima conforme necessário */
+    max-width: 100%; /* Defina a largura máxima para 100% */
   }
 
-
-/* ... (seu código CSS existente) ... */
-
-
+  /* ... (seu código CSS existente) ... */
 }
