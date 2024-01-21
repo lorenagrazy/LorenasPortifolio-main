@@ -222,6 +222,25 @@ form .button-area {
 }
 
 
+/* General Styles */
+/* ... Seu código CSS anterior ... */
+
+.contact .content.hide-form {
+  display: none; /* Esconde o formulário quando a classe hide-form está presente */
+}
+
+.contact .success-message {
+  display: none; /* Inicia oculto */
+  /* Outras propriedades ... */
+}
+
+.contact .content.show-form ~ .success-message {
+  display: block; /* Mostra quando a classe show-form está presente */
+}
+
+/* ... Seu código CSS posterior ... */
+
+
 /* ... (seu código CSS existente) ... */
 
 
@@ -270,9 +289,28 @@ form .button-area {
   .contact .content .image-box img {
     width: 100%;
     height: auto;
-    max-height: 20rem; /* Ajuste a altura máxima conforme necessário */
+    max-height: 6rem; /* Ajuste a altura máxima conforme necessário */
     max-width: 100%; /* Defina a largura máxima para 100% */
   }
+
+  /* General Styles */
+/* ... Seu código CSS anterior ... */
+
+.contact .content.hide-form {
+  display: none; /* Esconde o formulário quando a classe hide-form está presente */
+}
+
+.contact .success-message {
+  display: none; /* Inicia oculto */
+  /* Outras propriedades ... */
+}
+
+.contact .content.show-form ~ .success-message {
+  display: block; /* Mostra quando a classe show-form está presente */
+}
+
+/* ... Seu código CSS posterior ... */
+
 
   /* ... (seu código CSS existente) ... */
 }
