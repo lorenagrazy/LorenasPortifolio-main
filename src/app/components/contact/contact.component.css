@@ -28,7 +28,7 @@
   background: #ecf8f8;
   border-radius: 2.5rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
-    max-width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -205,22 +205,23 @@ form .button-area {
 
 .contact .success-message {
   position: absolute;
-  top: 100%; /* Posiciona a mensagem abaixo do conteúdo existente */
+  top: 50%; /* Centraliza verticalmente em relação à tela */
   left: 50%; /* Centraliza na horizontal */
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  padding: 3rem 0; /* Espaçamento de 3rem */
+  padding: 2rem 0; /* Reduzi o espaçamento para 2rem */
   box-sizing: border-box;
-  color: rgb(2, 25, 63);
+  background: none; /* Remove o fundo da mensagem */
 }
 
 .contact .success-content {
-  background: #ecf8f8;
   border-radius: 2.5rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
   padding: 2rem;
+  color: rgb(2, 25, 63);
 }
+
 
 /* ... (seu código CSS existente) ... */
 
@@ -228,7 +229,7 @@ form .button-area {
 /* Media Query for Small Screens */
 @media (max-width: 450px) {
   .contact .container {
-    max-width: 60%; /* Ajuste o valor conforme desejado para uma largura menor */
+    max-width: 100%; /* Ajuste o valor conforme desejado para uma largura menor */
     margin-left: auto;
     margin-right: auto;
     padding: 1rem; /* Ajusta o padding para melhor alinhamento */
@@ -241,8 +242,6 @@ form .button-area {
   .contact .content form {
     max-width: 100%;
   }
-
- 
 
   .button-area button {
     margin-top: 2rem;
@@ -263,30 +262,15 @@ form .button-area {
     left: 0.5rem;
   }
 
-  /* ... (seu código CSS existente) ... */
+  .contact .success-message {
+    padding: 2rem 0; /* Reduzi o espaçamento para 2rem */
+  }
 
-.contact .content {
-  position: relative; /* Adiciona posição relativa para que a mensagem de sucesso seja posicionada de acordo com isso */
-}
+  .image-box{
+    max-width: 50%;
+    width: 34rem;
+  }
 
-.contact .success-message {
-  position: absolute;
-  top: 100%; /* Posiciona a mensagem abaixo do conteúdo existente */
-  left: 50%; /* Centraliza na horizontal */
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
-  padding: 3rem 0; /* Espaçamento de 3rem */
-  box-sizing: border-box;
-}
-
-.contact .success-content {
-  background: #ecf8f8;
-  border-radius: 2.5rem;
-  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
-  padding: 2rem;
-  color: rgb(2, 25, 63) ;
-}
 
 /* ... (seu código CSS existente) ... */
 
