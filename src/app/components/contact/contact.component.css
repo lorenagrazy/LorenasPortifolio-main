@@ -226,8 +226,8 @@ small{
   .success-message {
     background-color: #ecf8f8; /* Cor de fundo verde */
     color: rgb(2, 25, 63);
-    padding: 3rempx; /* Espaçamento interno */
-    margin-bottom: 4rempx; /* Aumente a margem inferior conforme necessário */
+    padding: 3rem; /* Espaçamento interno */
+    margin-bottom: 5rem; /* Aumente a margem inferior conforme necessário */
   }
   
 }
