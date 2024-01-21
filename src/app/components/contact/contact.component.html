@@ -65,14 +65,16 @@
       </form>
     </div>
 
-    <div class="success-message fade-in">
-      <div class="success-image">
-        <img src="../../../assets/success.svg" alt="Descrição da imagem">
-      </div>
-      <div class="success-text">
-        {{ successMessage }}
-      </div>
-    </div>
+   <!-- Imagem e mensagem de sucesso sempre presentes -->
+<div class="success-message fade-in">
+  <div class="success-image" *ngIf="showSuccessImage">
+    <img src="caminho/para/sua/imagem.jpg" alt="Descrição da imagem">
+  </div>
+  <div class="success-text">
+    {{ successMessage }}
+  </div>
+</div>
+
 
 
     
