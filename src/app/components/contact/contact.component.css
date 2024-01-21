@@ -102,7 +102,7 @@ form .message textarea {
   height: 100%;
   outline: none;
   padding: 0 1rem 0 3rem;
-  font-size: 1.rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
   border: 1px solid rgb(2, 25, 63);
@@ -119,8 +119,8 @@ form .message textarea {
   border: 0.0625rem solid;
 }
 
-.field input:focus~i,
-.message textarea:focus~i {
+.field input:focus ~ i,
+.message textarea:focus ~ i {
   color: #fff;
 }
 
@@ -218,7 +218,7 @@ small {
   font-style: normal;
   text-align: center;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .success-message.fade-in {
   animation: fadeIn 1s ease-in-out;
@@ -315,7 +315,7 @@ small {
     max-width: 100%;
     max-height: 5rem; /* Ajuste conforme necessário */
     height: auto;
-   margin-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   /* Adiciona estilos para centralizar a mensagem de sucesso na parte inferior */
