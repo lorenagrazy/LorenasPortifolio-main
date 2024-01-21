@@ -65,10 +65,15 @@
       </form>
     </div>
 
-   <!-- No seu arquivo HTML -->
-<div *ngIf="isContactFormSubmitted" class="success-message fade-in">
-  {{ successMessage }}
-</div>
+    <div *ngIf="isContactFormSubmitted" class="success-message fade-in">
+      <div class="image-box">
+        <!-- Sua imagem existente aqui -->
+        <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
+      </div>
+      <div class="success-content">
+        {{ successMessage }}
+      </div>
+    </div>
 
     
   </div>
