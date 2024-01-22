@@ -13,8 +13,6 @@ export class ContactComponent implements OnInit {
   contactForm!: FormGroup;
   isContactFormSubmitted = false;
   isError = false;
-  successMessage = '';
-  showSuccessImage = false;
   errorMessage = '';
 
   constructor(private http: HttpClient, private router: Router) {}
@@ -43,14 +41,13 @@ export class ContactComponent implements OnInit {
       .subscribe(
         () => {
           this.isContactFormSubmitted = true;
-          this.successMessage = "Thank you for reaching out! Your message has been successfully sent. I'll get back to you as soon as I can.";
-          this.showSuccessImage = true;
           // Redirect to success component using the router
           this.router.navigate(['/success']);
         },
-        (error) => {
+        () => {
           this.isError = true;
-          this.errorMessage = "Oops! Something went wrong. Please try again later.";
+          // Redirect to error component using the router
+          this.router.navigate(['/error']);
         }
       );
   }
