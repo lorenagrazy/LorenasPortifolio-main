@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3.75rem 3rem;
+  padding: 2rem 3rem;
 }
 
 
@@ -233,7 +233,7 @@ form .button-area {
   }
 
   form .message i {
-    top: 1rem;
+    top: 2.5rem;
     left: 0.5rem;
   }
   form .message textarea{ 
