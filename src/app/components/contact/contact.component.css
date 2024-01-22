@@ -47,7 +47,7 @@
 
 .contact .content .image-box {
   max-width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contact .content .image-box img {
@@ -80,7 +80,7 @@ span:hover {
   height: 3.125rem;
   display: flex;
   position: relative;
-  margin: 2rem auto; /* Center the field horizontally */
+  margin: 1rem auto; /* Center the field horizontally */
   width: 100%;
 }
 
@@ -207,7 +207,7 @@ form .button-area {
   }
 
   .contact .content .image-box {
-    margin-bottom: 5rem; /* Ajusta a margem para melhor espaçamento */
+    margin-bottom: 1rem; /* Ajusta a margem para melhor espaçamento */
   }
 
   .contact .content form {
@@ -228,6 +228,7 @@ form .button-area {
 
   form i {
     left: 0.5rem;
+    margin-right: 4rem;
   }
 
   form .message i {
