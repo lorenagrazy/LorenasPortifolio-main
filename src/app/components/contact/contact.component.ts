@@ -9,7 +9,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  
   contactForm!: FormGroup;
   isContactFormSubmitted = false;
   isError = false;
@@ -42,6 +41,10 @@ export class ContactComponent implements OnInit {
         () => {
           this.isContactFormSubmitted = true;
           this.router.navigate(['/success']);
+
+          setTimeout(() => {
+            this.router.navigate(['/contact']);
+          }, 10000);
         },
         () => {
           this.isError = true;
