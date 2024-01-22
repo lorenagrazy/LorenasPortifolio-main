@@ -1,31 +1,19 @@
 <section class="contact" id="contact">
   <h2 class="heading">
-    <img class="icon" src="../../../assets//IconContactMe.png" alt="Image description">
+    <img class="icon" src="../../../assets//IconContactMe.png" alt="Descrição da imagem">
     <span>Contact Me</span>
   </h2>
 
   <div class="container">
     <div class="content">
-
-      <div class="success-message fade-in" *ngIf="isContactFormSubmitted && !isError">
-        <div class="success-image" *ngIf="showSuccessImage">
-          <img src="../../../assets/success.svg" alt="Image description">
-        </div>
-        <div class="success-text">
-          {{ successMessage }}
-        </div>
+      <div class="image-box" *ngIf="!isContactFormSubmitted">
+        <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
       </div>
 
-      <div class="error-message fade-in" *ngIf="isError">
-        <div class="error-text">
-          {{ errorMessage }}
-        </div>
-      </div>
-
-      <form *ngIf="!isContactFormSubmitted && !isError" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)"> <input type="hidden" name="form-name" value="contact" />
+      <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)" netlify>
+        <input type="hidden" name="form-name" value="contact" />
 
         <div class="form-group">
-          <label for="name"></label>
           <div *ngIf="name && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
             <small *ngIf="name.errors?.['required']">Name is required</small>
           </div>
@@ -36,18 +24,6 @@
         </div>
 
         <div class="form-group">
-          <label for="name"></label>
-          <div *ngIf="name && name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
-            <small *ngIf="name.errors?.['required']">Name is required</small>
-          </div>
-          <div class="field">
-            <i class="fas fa-user"></i> <!-- Ícone FontAwesome -->
-            <input id="name" type="text" formControlName="name" placeholder="Name" required />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="email"></label>
           <div *ngIf="email && email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
             <small *ngIf="email.errors?.['required']">Email is required</small>
             <small *ngIf="email.errors?.['email']">Enter a valid email address</small>
@@ -59,7 +35,6 @@
         </div>
 
         <div class="form-group">
-          <label for="phone"></label>
           <div *ngIf="phone && phone.invalid && (phone.dirty || phone.touched)" class="alert alert-danger">
             <small *ngIf="phone.errors?.['required']">Phone is required</small>
           </div>
@@ -70,7 +45,6 @@
         </div>
 
         <div class="form-group">
-          <label for="body"></label>
           <div *ngIf="body && body.invalid && (body.dirty || body.touched)" class="alert alert-danger">
             <small *ngIf="body.errors?.['required']">Message is required</small>
           </div>
@@ -87,10 +61,19 @@
         </div>
       </form>
 
+      <div class="success-message fade-in" *ngIf="isContactFormSubmitted && showSuccessImage">
+        <div class="success-image">
+        </div>
+        <div class="success-text">
+          Thank you for reaching out! Your message has been successfully sent. I'll get back to you as soon as I can.
+        </div>
+      </div>
+
+      <div class="error-message fade-in" *ngIf="isError">
+        <div class="error-text">
+          Oops! Something went wrong. Please try again later.
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-
-
-
