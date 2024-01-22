@@ -226,7 +226,7 @@ form .button-area {
     font-size: 1rem;
   }
   form .message textarea {
-    padding: 1rem 2rem; /* Ajusta o padding para melhor espaçamento */
+    padding: 2rem 3rem; /* Ajusta o padding para melhor espaçamento */
     font-size: 1rem;
   }
 
