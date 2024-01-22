@@ -107,6 +107,8 @@ form .message textarea {
   border-radius: 5px;
   border: 1px solid rgb(2, 25, 63);
   background: #fff;
+  text-transform: none;
+
   
 
 }
@@ -156,7 +158,7 @@ form .message textarea::-webkit-scrollbar {
 form .button-area {
   display: flex;
   justify-content: flex-end;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .button-area button {
@@ -233,7 +235,7 @@ form .button-area {
   }
 
   form .message i {
-    top: 2.5rem;
+    top: 2rem;
     left: 0.5rem;
   }
   form .message textarea{ 
