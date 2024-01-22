@@ -44,7 +44,7 @@ export class ContactComponent implements OnInit {
 
           setTimeout(() => {
             this.router.navigate(['/contact']);
-          }, 10000);
+          }, 8000);
         },
         () => {
           this.isError = true;
