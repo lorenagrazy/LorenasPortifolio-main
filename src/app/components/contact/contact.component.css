@@ -145,7 +145,7 @@ form .message textarea {
   max-height: 14.375rem;
   max-width: 100%;
   min-width: 100%;
-  padding: 0.90rem 4rem;
+  padding: 0.90rem 3rem;
  
 }
 
@@ -222,8 +222,9 @@ form .button-area {
 
   form .field input,
   form .message textarea {
-    padding: 0.5rem 1rem; /* Ajusta o padding para melhor espaçamento */
+    padding: 0.5rem 3rem; /* Ajusta o padding para melhor espaçamento */
     font-size: 1rem;
+    
   }
 
   form i {
