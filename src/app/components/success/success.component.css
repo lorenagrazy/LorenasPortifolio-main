@@ -31,7 +31,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .contact .content {
@@ -57,7 +57,6 @@
 .image-box {
   width: 10rem; /* Alterado para 50% para diminuir o tamanho da imagem */
   height: auto;
-
 }
 
 .text-box{
@@ -65,7 +64,9 @@
   font-size: 1.5rem;
   color: rgb(2, 25, 63);
   font-weight: 2rem;
-  line-height: 4rem;
+  line-height: 3rem;
+  
+  
 
 }
 
@@ -103,10 +104,11 @@ span:hover {
   }
 
   .contact .content .image-box img {
-    width: 100%; /* Alterado para 100% em telas menores */
+    width: 70%; /* Alterado para 100% em telas menores */
   }
 
   .contact .content .image-box {
     margin-bottom: 1rem; /* Mantido espaço abaixo da imagem em telas menores */
   }
+  
 }

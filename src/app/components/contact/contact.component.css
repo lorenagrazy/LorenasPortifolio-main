@@ -200,7 +200,7 @@ form .button-area {
 /* Media Query for Small Screens */
 @media (max-width: 450px) {
   .contact .container {
-    max-width: 80%; /* Ajuste o valor conforme desejado para uma largura menor */
+    max-width: 90%; /* Ajuste o valor conforme desejado para uma largura menor */
     margin-left: auto;
     margin-right: auto;
     padding: 1rem; /* Ajusta o padding para melhor alinhamento */

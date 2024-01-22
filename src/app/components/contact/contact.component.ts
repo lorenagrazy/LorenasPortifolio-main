@@ -41,12 +41,10 @@ export class ContactComponent implements OnInit {
       .subscribe(
         () => {
           this.isContactFormSubmitted = true;
-          // Redirect to success component using the router
           this.router.navigate(['/success']);
         },
         () => {
           this.isError = true;
-          // Redirect to error component using the router
           this.router.navigate(['/error']);
         }
       );
