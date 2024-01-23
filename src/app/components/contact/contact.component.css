@@ -21,18 +21,16 @@
   margin-top: 4rem;
   font-style: normal;
   margin-bottom: 3rem;
-  
 }
 
 .contact .container {
   background: #ecf8f8;
   border-radius: 2.5rem;
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
- 
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
 
 .contact .container .content {
@@ -43,7 +41,6 @@
   text-align: center;
   padding: 2rem 3rem;
 }
-
 
 .contact .content .image-box {
   max-width: 100%;
@@ -63,7 +60,8 @@
 
 .icon {
   width: auto;
-  height: 2.5rem; /* Tamanho original */
+  height: 3rem; /* Tamanho original */
+  margin-right: 1rem;
 }
 
 span {
@@ -92,8 +90,6 @@ form i {
   font-size: 1.0625rem;
   pointer-events: none;
   transform: translateY(-50%);
-
-  
 }
 
 form .field input,
@@ -108,15 +104,11 @@ form .message textarea {
   border: 1px solid rgb(2, 25, 63);
   background: #fff;
   text-transform: none;
-
-  
-
 }
 
 .field input::placeholder,
 .message textarea::placeholder {
   color: rgb(2, 25, 63);
-
 }
 
 .field input:focus,
@@ -139,7 +131,6 @@ form .message i {
   top: 2rem;
   font-size: 1.25rem;
   left: 0.9375rem;
-  
 }
 
 form .message textarea {
@@ -148,7 +139,6 @@ form .message textarea {
   max-width: 100%;
   min-width: 100%;
   padding: 1rem 3rem;
- 
 }
 
 form .message textarea::-webkit-scrollbar {
@@ -217,18 +207,14 @@ form .button-area {
     max-width: 100%;
   }
 
- 
-
   .button-area button {
     margin-top: 2rem;
   }
 
-  form .field input
-  {
-    padding: 1rem 3rem; 
+  form .field input {
+    padding: 1rem 3rem;
     font-size: 1rem;
   }
-  
 
   form i {
     left: 0.5rem;
@@ -239,9 +225,8 @@ form .button-area {
     top: 1.9rem;
     left: 0.5rem;
   }
-  form .message textarea{ 
-    padding: 1rem 3rem; 
+  form .message textarea {
+    padding: 1rem 3rem;
     font-size: 1rem;
   }
-
 }

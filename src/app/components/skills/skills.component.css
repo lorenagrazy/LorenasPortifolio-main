@@ -1,70 +1,102 @@
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: none;
 }
+
 .skills h2 {
-  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  color: #212529;
+  margin-top: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  
 }
-.skills .heading span {
-  color: rgb(255, 230, 0);
+.skills h2:hover {
+  color: #8c2f39;
 }
+
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
+  background: #ecf8f8;
   color: #fff;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 4rem;
   width: 90%;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
+
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
+
 .skills .container .bar {
-  margin-bottom: 15px;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 22, 0.9);
+  background: #0e2431;
   transition: 0.2s;
+
 }
+
 .skills .container .bar:hover {
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 8px 10px #8c2f39;
+  background-color: #0e2431;
 }
+
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
+
 }
+
 .skills .container .bar .info i {
   font-size: 4rem;
 }
+
 .skills .container .bar .info span {
   font-size: 2rem;
   font-weight: 500;
-  font-family: "Poppins";
+  font-family: "Nunito", sans-serif;
   margin-left: 0.5rem;
 }
+
+.skills .container .bar .info .icon {
+  width: 48px;
+  height: 48px;
+}
+.skills .heading .icon {
+  max-width: 4rem; /* Defina o tamanho máximo desejado */
+  height: auto; /* Mantenha a proporção original da imagem */
+  vertical-align: middle;
+  margin-right: 2rem ;
+}
+
+
+
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
   .skills .container {
     padding: 0;
-    margin: 0;
+   margin-top: 2rem;
   }
+
   .skills .container .row {
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
-    padding: 2rem 0.2rem 2rem 0.2rem;
+    padding: 1.7rem 1.7rem 1.7rem 1.7rem;
     gap: 1rem;
   }
+
   .skills .container {
-    margin-top: 5px;
-    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 90%;
   }
-}      
+}
