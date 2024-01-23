@@ -67,6 +67,7 @@
   line-height: 3rem;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
+  text-transform: none;
 }
 
 .contact .content .text-box {
@@ -80,6 +81,7 @@
 .icon {
   width: auto;
   height: 2.5rem;
+  margin-right: 1rem;
 }
 
 span {
