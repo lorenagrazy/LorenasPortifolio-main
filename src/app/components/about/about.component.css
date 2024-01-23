@@ -128,7 +128,7 @@
   }
 
   .about .row .content p {
-    margin-top: 0rem; /* Ajuste conforme necessário */
+    margin-top: -2rem; /* Ajuste conforme necessário */
     text-align: justify; /* Centralize o texto */
     margin-left: 4rem;
   }
@@ -146,4 +146,7 @@
     margin-top: 2rem;
   
   }
+
+  
+  
 }
