@@ -135,5 +135,15 @@
 
   .resumebtn .btn{
     margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .about .row .content p{
+    text-align: center;
+  }
+
+  .about .row .title img{
+    margin-top: 2rem;
+  
   }
 }

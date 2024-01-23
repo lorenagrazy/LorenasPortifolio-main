@@ -61,12 +61,12 @@
 
 .text-box{
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: rgb(2, 25, 63);
-  font-weight: 2rem;
+  font-weight: lighter;
   line-height: 3rem;
-  
-
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
 }
 
 .contact .content .text-box {
@@ -103,7 +103,7 @@ span:hover {
   }
 
   .contact .content .image-box img {
-    width: 70%; /* Alterado para 100% em telas menores */
+    width: 60%; /* Alterado para 100% em telas menores */
   }
 
   .contact .content .image-box {
