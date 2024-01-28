@@ -11,18 +11,17 @@
   font-style: normal;
   font-weight: 600;
   margin-bottom: 2rem;
- 
-
 }
+
 .education h1:hover {
   color: #8c2f39;
 }
 
 .education .heading .icon {
-  max-width: 4rem; /* Defina o tamanho máximo desejado */
-  height: auto; /* Mantenha a proporção original da imagem */
+  max-width: 4rem;
+  height: auto;
   vertical-align: middle;
-  margin-right: 2rem ;
+  margin-right: 2rem;
 }
 
 .education .box-container {
@@ -34,10 +33,11 @@
   margin-bottom: 3rem;
   margin-top: 1rem;
 }
+
 .education .box-container .box {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -47,21 +47,23 @@
   transition: 0.3s;
   background: #ecf8f8;
 }
+
 .education .box-container .box:hover {
   transform: scale(1.03);
   box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
 }
+
 .education .box-container .box .image {
   flex: 1 1 20rem;
-  width: 100%;
+  width: 50%;
 }
+
 .education .box-container .box img {
   object-fit: contain;
   position: relative;
-  width: 50%;
+  width: 60%;
   height: 100%;
 }
-
 
 .education .box-container .box .content {
   position: relative;
@@ -71,6 +73,7 @@
   flex-wrap: wrap;
   flex: 1 1 70rem;
 }
+
 .education .box-container .box .content h3 {
   font-size: 2rem;
   color: #0e2431;
@@ -79,11 +82,13 @@
   text-align: left;
   margin-left: 1rem;
 }
+
 .education .box-container .box .content p {
   font-size: 1.5rem;
   margin-left: 1rem;
   text-align: left;
 }
+
 .education h4 {
   font-size: 2rem;
   color: #8c2f39;
@@ -93,43 +98,34 @@
   font-weight: 700;
 }
 
-
-/* education media queries starts*/
 @media screen and (max-width: 600px) {
  
-
   .education .box-container .box {
     flex-direction: column;
-    width: 80%;
-    height: 8%;
-    margin-top: 3rem;
- 
+    width: 90%;
+    padding-bottom: 4rem;
   }
+
   .education .box-container .box .image {
     width: 100%;
-    height: 25rem;
+
   }
+
   .education .box-container .box img {
     width: 100%;
-    margin-top: 0;
-    padding-top: 0;
   }
+
   .education .box-container .box .content {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 6rem ;
     flex-wrap: wrap;
     flex: 0;
     align-items: center;
-    padding-top: 0rem;
+    
+ 
   }
-  .education .btns {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    flex-wrap: wrap;
-  }
+
   .education .box-container .box img {
     object-fit: contain;
     position: relative;
@@ -137,17 +133,10 @@
     height: 100%;
   }
 
-  .education .box-container .box .content h3 {
-    font-size: 2rem;
-    color: #0e2431;
-    padding: 0rem 0;
-    font-weight: 600;
-    text-align: left;
-    margin-left: 1rem;
-    text-align: center;
-  }
+  .education .box-container .box .content h3,
   .education .box-container .box .content p {
     text-align: center;
+    margin: 0;
   }
- 
+    
 }
