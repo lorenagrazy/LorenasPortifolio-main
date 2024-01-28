@@ -37,7 +37,7 @@
 .education .box-container .box {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 75%;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -99,7 +99,6 @@
 }
 
 @media screen and (max-width: 600px) {
- 
   .education .box-container .box {
     flex-direction: column;
     width: 90%;
@@ -108,7 +107,6 @@
 
   .education .box-container .box .image {
     width: 100%;
-
   }
 
   .education .box-container .box img {
@@ -122,8 +120,6 @@
     flex-wrap: wrap;
     flex: 0;
     align-items: center;
-    
- 
   }
 
   .education .box-container .box img {
@@ -138,5 +134,4 @@
     text-align: center;
     margin: 0;
   }
-    
 }
