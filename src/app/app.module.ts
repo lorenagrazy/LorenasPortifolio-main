@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { EducationComponent } from './components/education/education.component';
-import { ExperienceComponent } from './components/experience/experience.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { LayoutComponent } from './components/layout/layout.component';
@@ -18,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './components/success/success.component';
 import { ErrorComponent } from './components/error/error.component';
+import { SoftComponent } from './components/soft/soft.component';
 
 
 @NgModule({
@@ -27,13 +27,13 @@ import { ErrorComponent } from './components/error/error.component';
     AboutComponent,
     ContactComponent,
     EducationComponent,
-    ExperienceComponent,
     NavbarComponent,
     SkillsComponent,
     LayoutComponent,
     SuccessComponent,
  
-    ErrorComponent
+    ErrorComponent,
+      SoftComponent
   ],
   imports: [
     BrowserModule,

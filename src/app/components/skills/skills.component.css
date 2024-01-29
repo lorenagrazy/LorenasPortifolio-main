@@ -7,9 +7,10 @@
   text-align: center;
   font-size: 2.5rem;
   color: #212529;
-  margin-top: 3rem;
   font-style: normal;
   font-weight: 600;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
   
 }
 .skills h2:hover {
@@ -44,7 +45,8 @@
 }
 
 .skills .container .bar:hover {
-  box-shadow: 0 8px 10px #8c2f39;
+  transform: translateY(-5px); /* Eleva o conteúdo */
+  box-shadow: 0 8px 10px #8c2f39; /* Sombra ajustada */
   background-color: #0e2431;
 }
 
@@ -72,9 +74,8 @@
   height: 48px;
 }
 .skills .heading .icon {
-  max-width: 4rem; /* Defina o tamanho máximo desejado */
+  max-width: 3rem; /* Defina o tamanho máximo desejado */
   height: auto; /* Mantenha a proporção original da imagem */
-  vertical-align: middle;
   margin-right: 1rem ;
 }
 

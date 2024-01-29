@@ -7,7 +7,7 @@
   text-align: center;
   font-size: 2.5rem;
   color: #212529;
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-style: normal;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -18,7 +18,7 @@
 }
 
 .education .heading .icon {
-  max-width: 4rem;
+  max-width: 3rem;
   height: auto;
   vertical-align: middle;
   margin-right: 2rem;
@@ -37,7 +37,7 @@
 .education .box-container .box {
   display: flex;
   flex-direction: row;
-  width: 75%;
+  width: 70%;
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -50,7 +50,7 @@
 
 .education .box-container .box:hover {
   transform: scale(1.03);
-  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 1rem 0.5rem 1.2rem #8c2f39;
 }
 
 .education .box-container .box .image {
