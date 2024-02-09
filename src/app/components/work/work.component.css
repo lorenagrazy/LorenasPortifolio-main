@@ -5,7 +5,7 @@
   margin-top: 2.5rem;
   font-style: normal;
   font-weight: 600;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .work h2:hover {
@@ -19,17 +19,33 @@
 }
 
 .work .heading {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .work .box-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px;
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 3rem; /* Add padding to the container */
+  display: flex; /* Alterado para flex */
+  flex-wrap: wrap; /* Permite que os itens fluam para a próxima linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 50px; /* Espaçamento entre as caixas */
   background: #ecf8f8;
-  max-width: 1200px; /* Set a max-width for the container if needed */
+  max-width: 1200px;
+  padding: 3rem; /* Adiciona padding uniforme */
+}
+
+.work .box {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(25% - 20px); /* Define a largura das caixas */
+}
+.work .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #fff;
 }
 
 .work .box-container .box {
@@ -37,8 +53,8 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  height: 25rem;
-  width: 25rem;
+  height: 31rem;
+  width: 34rem;
 }
 
 .work .box-container .box img {
@@ -63,14 +79,20 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  height: 4rem;
   width: 100%;
   padding-left: 1rem;
   background: #0e2431;
 }
+.work .box-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Garante que o contêiner ocupe a altura total da tela */
+}
 
 .work .box-container .box .content .tag h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: normal;
   text-decoration: none;
@@ -88,22 +110,22 @@
 }
 
 .work .desc p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .work .desc .btns {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .work .desc .btns .btn {
   line-height: 0;
   display: inline;
-  padding: 1.5rem 2.5rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   background: #212529;
   margin-right: 2rem;
@@ -152,29 +174,31 @@
 .work .viewall .btn:hover i {
   transform: translateX(5px);
 }
-
-/* Media Queries */
-
-/* ... Seus estilos anteriores ... */
-
 /* Media Queries */
 
 @media only screen and (min-width: 450px) {
   .work .box-container {
-    grid-template-columns: repeat(1, 1fr); /* Ajusta para 1 coluna em telas maiores que 450px */
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .work .box-container-wrapper {
+    padding: 3rem;
   }
 }
 
 @media only screen and (min-width: 576px) {
   .work .box-container {
-    grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas em telas maiores que 576px */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work .box-container-wrapper {
+    padding: 3rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .work .box-container {
-    grid-template-columns: repeat(4, 1fr); /* Ajusta para 3 colunas em telas maiores que 768px */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .work .box-container-wrapper {
+    padding: 3rem;
   }
 }
-
-/* Adicione outras media queries conforme necessário */
