@@ -24,16 +24,18 @@
               "src/favicon.ico",
               "src/assets",
               {
-                "glob":"_redirects",
+                "glob": "_redirects",
                 "input": "src",
-                "output":"/"
+                "output": "/"
               }
             ],
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "src/styles.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.min.js"]
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -49,7 +51,6 @@
                   "maximumError": "8kb"
                 }
               ],
-              
               "outputHashing": "all"
             },
             "development": {
@@ -110,8 +111,6 @@
             "siteId": "y"
           }
         }
-        
-        
       }
     }
   }
