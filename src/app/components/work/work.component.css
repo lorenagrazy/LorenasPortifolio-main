@@ -179,6 +179,28 @@
 @media only screen and (min-width: 450px) {
   .work .box-container {
     grid-template-columns: repeat(1, 1fr);
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .work .box-container-wrapper {
+    padding: 5rem;
+  }
+  .work .box-container .box{
+    height: 32rem;
+  width: 30rem;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 576px) {
+  .work .box-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .work .box-container-wrapper {
     padding: 5rem;
@@ -186,18 +208,12 @@
   
 }
 
-@media only screen and (min-width: 576px) {
-  .work .box-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .work .box-container-wrapper {
-    padding: 5rem;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .work .box-container {
     grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .work .box-container-wrapper {
     padding: 5rem;
