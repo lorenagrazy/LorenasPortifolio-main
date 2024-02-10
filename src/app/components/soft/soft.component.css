@@ -15,8 +15,8 @@ h1 {
   color: #8c2f39;
 }
 .icon {
-  max-width: 3rem; /* Defina o tamanho máximo desejado */
-  height: auto; /* Mantenha a proporção original da imagem */
+  max-width: 3rem;
+  height: auto;
   margin-right: 1rem;
   margin-top: 2rem;
 }
@@ -132,8 +132,6 @@ h2 {
   font-size: 1.2rem;
 }
 
-
-
 @media screen and (max-width: 37.5rem) {
   .soft {
     min-height: 80vh;
@@ -153,7 +151,6 @@ h2 {
     padding-left: 5rem;
     padding-right: 1.25rem;
   }
- 
 
   .soft .container::after {
     font-size: 2rem;
@@ -173,6 +170,4 @@ h2 {
   .soft .right {
     left: 0%;
   }
-
- 
 }

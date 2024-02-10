@@ -99,17 +99,14 @@
 }
 
 @media screen and (max-width: 600px) {
+ 
+
   .education .box-container .box {
     flex-direction: column;
-    width: 90%;
-    padding-bottom: 4rem;
+    width: 80%;
   }
 
   .education .box-container .box .image {
-    width: 100%;
-  }
-
-  .education .box-container .box img {
     width: 100%;
   }
 
@@ -118,15 +115,49 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 0;
+    flex: 1 1 2rem;
     align-items: center;
+    margin-top: -9rem; /* Ajuste de margin-top para aproximar o texto da base da imagem */
   }
 
   .education .box-container .box img {
     object-fit: contain;
     position: relative;
-    width: 40%;
-    height: 100%;
+    width: 30%;
+    height: 70%;
+  }
+
+  .education .box-container .box .content h3,
+  .education .box-container .box .content p {
+    text-align: center;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .education .box-container .box {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .education .box-container .box .image {
+    width: 30%;
+   
+  }
+
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 2rem;
+    align-items: center; /* Alinhar conteúdo verticalmente */
+  }
+
+  .education .box-container .box img {
+    object-fit: contain;
+    position: relative;
+    width: 30%;
+    height: 70%;
   }
 
   .education .box-container .box .content h3,
