@@ -163,18 +163,18 @@
     margin-top: 1rem;
   }
   .home .content p {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   .home .content p span {
-    font-size: 2.2rem;
+    font-size: .2rem;
   }
   .home .content h2 {
     margin-left: 2rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
  
   .home .content p {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #212529;
     font-weight: 600;
     padding: 1rem 0;
@@ -182,6 +182,10 @@
   }
   .home .content h2 span {
     font-size: 2.7rem;
+  }
+  .home .image {
+    flex: 1 1 25rem;
+    z-index: 1;
   }
 
 }
