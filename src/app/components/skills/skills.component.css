@@ -19,13 +19,11 @@
 
 .skills .container {
   background: #ecf8f8;
-  color: #fff;
   border-radius: 1rem;
   padding: 4rem;
   width: 90%;
   margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  
 }
 
 .skills .container .row {
@@ -74,30 +72,32 @@
   height: 48px;
 }
 .skills .heading .icon {
-  max-width: 3rem; /* Defina o tamanho máximo desejado */
-  height: auto; /* Mantenha a proporção original da imagem */
+  max-width: 3rem; 
+  height: auto; 
   margin-right: 1rem ;
 }
 
 
 
-/* skills media queries starts*/
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 450px) {
+
+  .skills .heading .container{
+    padding: 2rem;
+  }
   .skills .container {
-    padding: 0;
-   margin-top: 2rem;
+    padding: 1.5rem;
+    width: 50%; /* Ajuste a largura conforme necessário */
   }
 
   .skills .container .row {
     grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
-    padding: 1.7rem 1.7rem 1.7rem 1.7rem;
+    margin: 2rem;
+    padding: 1rem;
     gap: 1rem;
   }
 
-  .skills .container {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 90%;
-  }
+  
+
+  
 }
