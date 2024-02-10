@@ -183,6 +183,7 @@
     padding-left: 0.5rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    gap: 1rem; 
   }
   .work .box-container .box {
     border-radius: 0.5rem;
