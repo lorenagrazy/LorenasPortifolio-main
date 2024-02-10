@@ -177,16 +177,22 @@
 /* Media Queries */
 
 @media only screen and (min-width: 450px) {
+  .work {
+    /* Adiciona uma margem ao redor do componente work */
+    margin: 4rem; /* Você pode ajustar o valor conforme necessário */
+  }
+  
   .work .box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     background: #ecf8f8;
-    max-width: 100%; /* Defina o max-width para 100% ou outro valor conforme necessário */
+    max-width: 100%;
     padding: 1.5rem;
-    box-sizing: border-box; /* Inclui o padding na largura total do elemento */
+    box-sizing: border-box;
   }
+  
   
   .work .box-container .box {
     border-radius: 0.5rem;
@@ -199,35 +205,8 @@
   .work .box-container-wrapper {
     padding: 7rem;
   }
-  .work {
-    margin: 2rem;
-  }
   
   
   
-}
-
-@media only screen and (min-width: 576px) {
-  .work .box-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .work .box-container-wrapper {
-    padding: 5rem;
-  }
   
-}
-
-@media only screen and (min-width: 768px) {
-  .work .box-container {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .work .box-container-wrapper {
-    padding: 5rem;
-  }
 }
