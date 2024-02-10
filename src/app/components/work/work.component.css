@@ -178,13 +178,16 @@
 
 @media only screen and (min-width: 450px) {
   .work .box-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    gap: 1rem; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    background: #ecf8f8;
+    max-width: 100%; /* Defina o max-width para 100% ou outro valor conforme necessário */
+    padding: 1.5rem;
+    box-sizing: border-box; /* Inclui o padding na largura total do elemento */
   }
+  
   .work .box-container .box {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -196,10 +199,7 @@
   .work .box-container-wrapper {
     padding: 7rem;
   }
-  .work .box-container .box{
-    height: 32rem;
-  width: 30rem;
-  }
+  
   
   
 }
