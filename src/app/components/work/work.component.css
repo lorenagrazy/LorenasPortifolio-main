@@ -176,37 +176,28 @@
 }
 /* Media Queries */
 
-@media only screen and (min-width: 450px) {
+/* Media Queries */
+@media only screen and (max-width: 450px) {
   .work {
     /* Adiciona uma margem ao redor do componente work */
-    margin: 4rem; /* Você pode ajustar o valor conforme necessário */
+    margin: 2rem; /* Valor ajustado para um distanciamento menor */
   }
-  
+
   .work .box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 20px; /* Reduz o espaçamento entre as caixas para telas menores */
     background: #ecf8f8;
     max-width: 100%;
-    padding: 1.5rem;
+    padding: 1rem; /* Reduz o padding para um espaçamento interno menor */
     box-sizing: border-box;
   }
-  
-  
-  .work .box-container .box {
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    height: 31rem;
-    width: 29rem;
+
+  .work .box {
+    /* Ajusta a largura das caixas proporcionalmente */
+    width: calc(50% - 10px); /* Define a largura das caixas para ocupar metade da largura do contêiner */
+    max-width: 100%; /* Garante que as caixas se ajustem ao tamanho do contêiner */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior entre as caixas */
   }
-  .work .box-container-wrapper {
-    padding: 7rem;
-  }
-  
-  
-  
-  
 }
