@@ -184,8 +184,16 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  .work .box-container .box {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 31rem;
+    width: 29rem;
+  }
   .work .box-container-wrapper {
-    padding: 5rem;
+    padding: 7rem;
   }
   .work .box-container .box{
     height: 32rem;
