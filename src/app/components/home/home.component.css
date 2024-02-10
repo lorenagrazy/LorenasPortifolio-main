@@ -145,17 +145,17 @@
 
 @media (max-width: 450px) {
   .home {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
   }
   
   .home .btn {
-    margin: 4rem 0;
+    margin: 3rem 0;
     margin-left: 2rem;
   }
 
   .socials {
     position: relative;
-    margin-top: 12rem;
+    margin-top: 10rem;
     margin-left: 2rem;
   }
   .home .image img {
@@ -170,18 +170,18 @@
   }
   .home .content h2 {
     margin-left: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
   }
  
   .home .content p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #212529;
     font-weight: 600;
     padding: 1rem 0;
     margin-left: 2rem;
   }
   .home .content h2 span {
-    font-size: 3.5rem;
+    font-size: 2.7rem;
   }
 
 }
