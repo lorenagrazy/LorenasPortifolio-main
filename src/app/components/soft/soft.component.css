@@ -137,6 +137,7 @@ h2 {
 @media screen and (max-width: 37.5rem) {
   .soft {
     min-height: 80vh;
+    margin-left: 3.2rem;
   }
 
   .soft .timeline {
@@ -148,7 +149,7 @@ h2 {
   }
 
   .soft .container {
-    width: 100%;
+    width: 90%;
     padding-left: 5rem;
     padding-right: 1.25rem;
   }
