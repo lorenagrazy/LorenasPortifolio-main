@@ -1,13 +1,13 @@
 <section class="contact" id="contact">
   <h2 class="heading">
-    <img class="icon" src="../../../assets//contacteme.png" alt="skills">
+    <img class="icon" src="assets/contacteme.png" alt="skills">
     <span>Contact Me</span>
   </h2>
 
   <div class="container">
     <div class="content">
       <div class="image-box" *ngIf="!isContactFormSubmitted">
-        <img draggable="false" src="../../../assets/ContacteMe2.svg" alt="">
+        <img draggable="false" src="assets/ContacteMe2.svg" alt="">
       </div>
 
       <form *ngIf="!isContactFormSubmitted" name="contact" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit($event)" netlify>
