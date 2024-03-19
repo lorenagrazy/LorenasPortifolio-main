@@ -12,7 +12,7 @@ Project developed using Angular 16
 </p>
 
 <div align="center">
-<a href="https://lorenasportifolio.netlify.app">⚙️See how it works</a>
+<a href="https://lorenagrazy.github.io/LorenasPortifolio-main/">⚙️See how it works</a>
 </div>  
 
 <br>
